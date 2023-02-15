@@ -137,6 +137,26 @@ flex-basis
 flex
 align-self*/
 
+.videoSobre .container {
+  display:flex;
+}
+
+.videoSobre-sobre{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  flex-grow:2;
+}
+
+.videoSobre-video{
+  flex-grow:1;
+  flex-shrink:2;
+}
+
+.videoSobre-sobre-list{
+  flex-grow:1;
+}
+
 /*parte mobile*/
 @media screen and (max-width: 768px) {
     .cabecalhoPrincipal-nav{
@@ -182,5 +202,9 @@ align-self*/
     .cabecalhoPrincipal-nav-link-app{
         order: -1; /*colocamos o elemento na primeira ordem da lista*/
     }
+
+    .videoSobre .container {
+        display:initial;
+      }
 }
 
